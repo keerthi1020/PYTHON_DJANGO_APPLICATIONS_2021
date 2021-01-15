@@ -1,0 +1,64 @@
+Django Framework:
+================
+Django is a webapplication framework,which is used to develop the 
+webapplication using Python-Django.
+
+framework:
+=========
+framework is nothing but a project which can be implemented into 
+our python language for developing our webapplication projects in python.
+
+to develop any web application we required the server side technologies
+called as python-Django,Java with spring and hibernate frameworks,
+php with codignator,.net with mvc framework.
+
+To develop Any Web Application in Python using Django framework we can use a design pattern arichtecture called as MVT.
+
+MVT====>model view template.
+
+view:
+====
+view is a django class which is used to develop the server logic to 
+run the entire application inside of the middleware server.
+
+model:
+=====
+model is a django class which is used to develop the database logic 
+which we have to store inside of database.
+
+template:
+========
+template is a html file which is used to develop the type of requests
+and also request must from this file to ui logic developing file called
+as forms.
+
+forms:
+=====
+forms is also an django file which is used to develop the django represented ui logic by importing the model.
+
+
+Note:
+====
+To work with django framework we can download a predefined module called
+as django module using pip using internet in commandline prompt.
+
+steps to develop basic django project:
+=====================================
+1)create a folder in any location in your system.
+2)open the folder click on the top of the bar and type cmd 
+to visit the directory location of that folder.
+3)In that location create a django project.
+4)django-admin startproject myproj
+5)create an application inside of the project location.
+6)django-admin startapp myapp
+
+To execute the above application we can follow 3 steps:
+
+   a)python manage.py makemigrations(create an sql query)
+   b)python manage.py migrate(pass the sql query for execution)
+   c)python manage.py runserver(to see the project result)
+
+http://127.0.0.1:8000/===>default port number for django default server
+is 8000,default server name is Django Development server.
+Default Database is SQLite3.
+
