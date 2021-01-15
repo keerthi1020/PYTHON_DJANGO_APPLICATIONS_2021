@@ -1,0 +1,281 @@
+                                    AdvancedPython:
+                                    -=-=-=-=-=-=-=-
+OOPS(Object Oriented Programming System/Structure):
+===================================================
+object oriented programming system/structure,any programming languages which can follows oops rules and regulations and implements the application into our languages by following
+2 special syntaxes class and object.
+
+oops principles are classified into 4 types:
+============================================
+1)Encapsulation==>provides strong security
+2)Inheritance===>reusability
+3)Polymorphism==>performing multitasks by a single person
+4)Abstraction==>hiding unwanted data showing the present data
+
+class:
+=====
+class is a syntax or structure used to represent or bind related datamembers along with related functionalities is known as a class.
+datamembers=datatypes+variables====>data.
+functionalities===>methods.
+
+syntax of class:
+===============
+class classname:
+    stmt1
+    stmt2
+    stmt3
+
+Example Program:
+-=-=-=-=-=-=-=-=
+class ABC:
+     print("hello")
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                       Variables:
+                                       -=-=-=-=-=-
+*)variable is nothing but a name of memory location to store the values/data.
+*)we can define variable names in 3 ways:
+a)Alphabets
+b)underscores
+c)digits
+*)But variable names must be starts with only alphabets and undercores but not with digits.
+Example:
+-=-=-=-=
+a_2=100(valid)
+_32df=200(valid)
+56s_=5.36(invalid)
+2_b=5.36(invalid)
+*)variables are mainly classified into 3 types:
+  a)static variable
+  b)non-static/instance variable
+  c)local variable
+
+a)static variable:
+-=-=-=-=-=-=-=-=-=
+*)variables which is defined inside the class and accessed using classname inside of static or non-static methods/instance methods is known as a static variable.
+
+*)variables which are defined with in the class can be called using classname and outside of the class also called by using classname is also known as a static variable.
+
+Example Program on static variable & method & non-static method:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+class D:
+      a=True
+      b=100
+      c="aaa"
+      #static method
+      def m1():
+              print(D.a)#static variable calling using classname inside of static method
+              print(D.b)#static variable calling using classname inside of static method
+
+      #non-static or instance method
+      def m2(self):
+              print(D.c)#static variable calling using classname inside of non-static method
+
+#referencevariable=classname()=>Objectcreation to store non-static variables or methods data.
+#referencevariable name must be any name to call & store non-static data inside of object & display
+d1=D()
+d1.m2()
+
+D.m1()
+
+
+b)non-static/dynamic/instancevariable:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+variable which is defined inside the class and accessed using self keyword 
+inside of non-static methods is known as a non-static variable/instance variable.
+variables which are defined with in the class can be called using self keyword and outside of the class can 
+also be called by using object reference variablename.
+
+Example Program on static and non-static:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+class Employee:
+    empno=7788
+    empname="hari"
+    empsal=30000.00
+    emppf=2000
+    emprole="developer"
+    def m1(self):#non-static method
+        print(Employee.empno)#static variable calling
+        print(self.empname)#non-static variable calling
+        print(self.empsal)#non-static variable calling
+
+#referencevariable=classname()==>syntax to creates an object
+#here referencevariable name must be any name which is used to point out the object and call
+#the class level non-static or instance data and stores inside of the created object or memory.
+
+emp=Employee()
+emp.m1()
+print(emp.emppf)#to call any non-static or instance variables or methods outside of the class
+#we can use object reference variable.
+
+#to call any non-static or instance variables or methods inside or outside  of the class
+#we can use self keyword.
+print(Employee.emprole)
+
+c)localvariable:
+-=-=-=-=-=-=-=-=-
+A variable which is defined and accessed inside of the methods is known as a local variable.
+local variable of one method cannot be accessed into
+outside of the another methods.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Reading The Variables from outside of the class as a static and non-static:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+we can call any variables which are defined with in a class by using from outside of the class as a static using classname and calling variables from outside of the class
+by using object referencevariables.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+a)Encapsulation:
+-=-=-=-=-=-=-=-=-
+The concept of grouping or binding related datamembers along with related functionalities
+is known as a Encapsulation.
+
+datamembers=datatypes+variables====>Data.
+functionalities = methods(static or non-static method).
+
+b)Inheritance:
+=============
+The concept of accessing/overriding/inheriting the properties from one class to another class is known as a Inheritance.
+Inheritance Relations are mainly 2 types:
+
+*)IS-A Relation
+================
+To work with inheritance IS-A Realtion then two or more
+than 2 classes can contains relations using extends keyword in (java) and in python(parenthesis symbol).
+IS-A having following types:
+
+a)single inheritance:
+====================
+the concept of  accessing the properties from parent class to child class is known as a single inheritance.
+
+b)hierarchial:
+=============
+the concept of accessing the properties from single class to multiple 
+classes is known as a hierarchial inheritance.
+
+c)multilevel:
+=============
+the concept of accessing the properties from multiple classes to single 
+class by using the concept of one after another is known as a multilevel inheritance.
+
+d)multiple:
+===========
+the concept of accessing the properties from multiple classes to single 
+class by using the concept of at a time is known as a multiple inheritance.
+multiple inheritance is not supported in java.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+HAS-A Relationship:
+==================
+The concept of accessing the properties from one class to another class by using classname or by using object reference variable name is known as a HAS-A RelationShip.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Polymorphism:
+-=-=-=-=-=-=-
+poly means many morphsim means forms,the concept of defining multiple functionalities
+or logics with in a same class is known as a polymorphsim.
+we can implememt polymorphism concept in python by using 2 ways:
+
+ a)method overloading:
+   -=-=-=-=-=-=-=-=-=-
+   The concept of defining multiple methods with same name,same number of parameters or different number of parameters with in a same class is known as a method overloading.
+
+note:
+-=-=-
+According to Python Interpreter Perspectives Method Overloading is Failed in Python,
+if we multiple methods with same name then which method is defined as a last method
+only that method will be get executed still if we try to call other methods for
+execution then we will gets runtime error.
+
+ b)method overriding:
+   -=-=-=-=-=-=-=-=-=-
+*)The concept of defining multiple methods with same name,one method is in super class and another method is in sub class is known as a method overriding.
+*)to perform method overriding operations in python,then 2 classes must contains inheritance is-a relationship.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+d)abstraction:
+-=-=-=-=-=-=-=-
+*)The concept of hiding the properties of class from outside of the class.
+*)we can hide the properties of a class by using __.
+*)if we apply __ to any methods or any variables or any constructors 
+which are defined with in a class then that property is in hided 
+mode cannot be accessed from outside the class.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                  Constructors:
+                                  -=-=-=-=-=-=-
+*)constructor is a special type of method,which is used to define and initialize the 
+variables as a non-static variables inside of the constructor.
+
+*)constructor is executed automatically when ever we can creates an object.
+
+*)constructor name in python is __init__.
+
+*)In a class we can define n number of constructors,but
+python interpreter will executes only last defined
+constructor.
+
+types of constructors:
+-=-=-=-=-=-=-=-=-=-=-=-
+with out parameters or default constructor
+with parameters or user defined constructor
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                         Destructors or Garbage Collections:
+                         -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+The concept of removing unwanted or unreffered objects
+from the memory locations is known as a 
+Destructor or Garbage Collections.
+to define any destructor with in a class, we can use
+__del__.
+to remove the unwanted objects which are there inside
+of the class by using del keyword.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                      MultiThreading:        
+                                      -=-=-=-=-=-=-=-
+Thread is nothing but of flow of request from client to server or server to server.
+
+MultiThreading Definition:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+The concept of executing multiple threads along with one part of the other thread is known as a multithreading.
+
+to work with multithreading concept in python we can use a predefined module called threading module.
+
+to define a thread we can use Thread class,we can use the Thread class from threading module.
+
+to define a Thread class logic we can use run() from Thread class.
+
+if we want send thread as an execution we can use start() from Thread class.
+
+suspending the threads:
+-=-=-=-=-=-=-=-=-=-=-=-
+sleep function:
+-=-=-=-=-=-=-=-
+sleep() is a predefined function,which is defined inside of time module,sleep fucntion is used to suspends the current thread until the specified thread execution time is over.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                     Python with Database Configurations:
+                     -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*)If we want to provides the communication between Python Program to any Database Servers Then We Can Use The Concept Of Modules.
+
+*)If we want to provides the communication between python program to oracle database we can use a predefined module called as a cx_Oracle module
+
+*)If we want to provides the communication between python program to mysql database we can use a predefined module called as a MySQLdb module
+
+*)If we download cx_Oracle module using pip in command prompt then automatically we configure the python with oracle database server connection establishment.
+
+*)To work with python to any database we can follow some rules as follow below:
+
+a)import the db represented module.
+b)Establish the connection between python program to database.
+c)create a cursor object.(MEDIATOR BETWEEN PYTHON PROGRAM TO ANY DBSERVERS).
+d)pass the sql query to cursor object using execute method from cursor
+  method from cursor object.
+e)close the connections.
+
+For Every Database Servers Common Language is SQL OR SEQUEL,But SQL OR SEQUEL QUERY DEPENDENT FOR EVERY DATABASE SERVER.
+
+Every Database server Can allows only query types of data cannot allows other data.
+
+We can Implements Every Database Servers Queries Using SQL LANGAUGE.
+
+SQL===>structured query language
+SEQUEL===>structured english query language.
+create table query
+insert data in to table query
+update data query
+delete data query
+drop table query
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-END-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-

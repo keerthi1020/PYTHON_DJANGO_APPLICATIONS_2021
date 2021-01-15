@@ -1,0 +1,930 @@
+                             CorePython:
+                             -=-=-=-=-=-
+Python is a one of the programming language,this language was developed or implemented by NetherLand Scientist Guido van rossum from netherlands in the year 1989 and Released in the market in the year 1991.
+
+Copy rights of python was maintaining by psf (python software foundation usa) organization team members.
+(http://www.python.org(python 2 and python 3).
+
+Python Software is available in 3 Versions:
+1.x(1.1,1.2,1.3=====)==>removed
+2.x(2.1,2.2,2.3,===,2.7.15,2.7.16,2.7.17,2.7.18)
+3.x(3.1,3.2,3.6.4,3.6.5,3.6.7,3.7.0,3.7.1,3.7.2,3.7.3,3.7.4,3.8.0,3.8.1-----3.9.0)
+Python is a Opensourced Programming Language and also Platform Independent Programming Languages(Runs
+in all Operating Systems).
+
+Python Software Runs in All Varieties Of Operating System Like:
+
+     a)Windows(vista,Xp,7,8,8.1,10)
+     b)Unix/Linx(Centos,ubentu,RedHat)
+     c)Apple Mac Os
+     d)SunSolaris Os.
+
+The Purpose of using Python Programming Language is for developing of WebApplications/Internet Based Applications.
+
+WebApplications/Internet Based Applications:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Any Application which runs in server side using internet and database storage and creates a dynamic webpages.
+
+Example:
+-=-=-=-=-
+fb,gmail,yahoo,naukari,shines etc.
+
+To Develop this WebApplications we can use 3 layers:
+
+1)ui layer(html forms)(user interface)(presentation layer)
+2)server layer(python-django)
+3)db layer(mysql,oracle database servers(crud operations))
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Every python program must be saved with an extension
+called as a filename.py extension(default filename.txt).
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Datatypes:
+=========
+Datatypes are nothing but some of the keywords of the programming languages,which are used to specify what type of data is going  to be stored into the variables.
+
+programming languages supports either static or dynamic datatypes.
+
+datatypes of one programming language to another pl is not going to be same.
+
+every datatype in python is internally implemented as a class type.
+
+static datatypes:
+-=-=-=-=-=-=-=-=-
+
+*)In Python datatypes programmer or developer should datatype to the variables explicitly why because python contains defualt datatypes then if we defines value to variables based on that value represented class & object will be created to find out class we can use type function and to find out object address we can use id function.
+
+*)In Python datatypes supported programming languages,one variable can stores different varieties of data.
+
+a=10(valid)
+print(a)
+
+a=20;(valid)
+print(a)
+
+type() function
+id() function
+
+Python datatypes are classified into 2 types:
+
+a)Fundamental Datatypes:
+======================
+Fundamental datatypes represented class objects  can stores single values at a time,if we defines more than one value to any fundamental datatypes then  automatically by default collection datatype tuple class object is created.
+
+Fundamental represented class objects are :
+    int,float,str,bool,complex
+
+    c,cpp,java===>int a=10;(valid)
+                 int b=10,20;(invalid==>go with arrays)
+    python====>a=10(valid==>int class object)
+               a=20,30,40(valid==>collection default datatype tuple class object is created)
+
+collection datatypes:
+====================
+collection datatypes represented class objects can stores more than one values at a time
+in the form of list,tuple,set and dict.
+
+list:
+====
+a)list class object can be represented by using square brackets with single or more than one values.
+b)if we use empty square brackets then automatically empty list class object is created.
+
+tuple:
+======
+a)tuple object can be represented by using giving at a time more than one value with 
+parenthisis or with out parenthisis.
+b)if we use empty parenthisis then automatically tuple object is created.
+c)with parenthesis or with out parenthesis with only one single value is nothing but fundamental class object is created based on the value given by the programmer/developer.
+
+set:
+===
+a)set object can be represented by using curly braces with at least single element or more than one element.
+b)if we use curly braces with single or more than one values then automatically set
+object is created.
+c)if we define empty curly braces then empty
+dict object is created.
+
+dict:
+====
+a)dict object can be represented by using curly braces with key value pair elements.
+b)if we use curly braces with data in the form key-value paired then automatically dict object is created.
+======================================================================================================
+                                 Operators:
+                                 -=-=-=-=-=-
+*)Operators are nothing but a symbols which are used to perform
+operations on operands.
+
+*)Operators in Python are mainly classified into 5 types:
+
+      a)Arithmetic operators:
+        -=-=-=-=-=-=-=-=-=-=-
+        Arithmetic operators are used to perform mathematical arithmetic operations like
+        +,-,*,/,//(floor division),%,**(exponent)(5**3)
+          
+      b)Relational or Comparsion operators:
+        -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        Relational operators are used to find the data with in the objects which are  pointed to the operands.
+          >,<,>=,<=,==,!=
+          
+      c)Logical Operators:
+        -=-=-=-=-=-=-=-=-
+        Logical Operators are used to perform mathematical logical operations which are         pointed to the operands.
+
+        and,or,not
+                                                                                          
+      d)Assignment Operators:
+       -=-=-=-=-=-=-=-=-=-=-
+        Assignment Operator are used to assigns values to the variables
+        with the help of shorthand operators.    
+        Assignment Operator is denoted with a symbol called as(=).
+           (a=10)
+
+      Example:
+      -=-=-=-
+      shorthand operators like a+=b(a=a+b),a-=b,a*=b,a/=b,a//=b and so on.
+        
+        e)special operators:
+        =================
+        python is providing mainly 2 types of special operators:
+            
+        a)membership operators:
+          ====================
+          Membership operators are used to search for the elements wheather the given elements is present inside of iterable object or not.
+
+if we want to work with membership operators we can use
+in and not in operators.
+
+          example:
+          ========
+          a=[10,20,40,True,"hari"]
+          print(25 in a)#False
+          print(40 not in a)#False
+          print("hari" in a)#True
+          print(True not in a)#False
+
+
+          b)identity operators:
+          =====================
+      identity operators are used to find out the address of the objects which are pointed to the operands.
+
+      if we want to work with identity operators we can use is and is not operators.
+
+          example:
+          =======
+        a=10
+        print(a)
+        print(id(a))
+
+        b=10
+        print(b)
+        print(id(b))
+
+        print(a is b)#True
+        print(a is not b)#False
+
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+iterable objects:
+================
+allowing and accessing more than one values or more than one characters
+at a time are comes under iterable objects.
+
+iterable objects represented classes are :
+    str,list,tuple,set and dict.
+
+non-iterable objects:
+====================
+allowing and accessing only single value at a time
+are comes under non-iterable objects.
+
+non-iterable objects represented classes are :
+    int,float,bool and complex.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+Reading the data from keyboard and print in python console:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+*)By using input() we can read the data from keyboard dynamically.
+
+*)input() is a predefined function,which is used to read the data from keyboard.
+
+*)If we want read the data in the form of our own format we can use type conversion functions.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+                                     str handling:
+                                     -=-=-=-=-=-=-
+*)Group of characters or sequence of characters is also known as a str.
+*)Group of characters or sequence of characters can be stored in str class object.
+*)We can create str class object in 2 ways:
+
+   a)by using '' or ""(we can represent only line of str)
+   b)by using ''' or """(we can represent more than one line of str)
+
+*)Every character in str class object can be represented with unique index starting with
+zero.
+
+*)if str supports indexes then it automatically supports slicing concept also.
+
+*)strs supports both positive and negative indexing concept.
+
+*)postive indexing starts with zero and negative 
+indexing starts with -1.
+========================================================================================
+                             Control Flow Statements:
+                             -=-=-=-=-=-=-=-=-=-=-=-=-
+Every programming language programs execution starts from first line executes each and every line only once and terminates the program until the last line of the program execution is over.
+
+control flow statements are used to disturbs the normal flow of the execution of the program.
+
+Every program in python can be defined with the block or block clause with some specific indentations.
+
+block:
+=====
+A block which contains same space indentations is known as a block/block clause.
+
+    syntax for block:
+    ================
+    ========== 
+    ==========
+    ==========
+                     ===========
+                     ===========
+                     ===========
+    ===========
+    ===========
+    ===========
+
+a block begins when ever indentation increases.
+a block ends when ever indentation decreases to zero.
+
+Python supports 2 types of control flow statements:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+a)Conditional Statements
+b)Looping Statements
+
+a)Conditional Statements:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Conditional Statements are used to executes the set of block statements until the condition becomes false.
+
+   Python Supports 4 types of Conditional Statements:
+
+      a)if:
+       ====
+       if block is used to executes the set of statements until the condition becomes
+false,when the if block returns false it will skips the execution of the if block statement .
+
+      syntax:
+      ======
+      if condition:
+                stmt1
+                stmt2
+                stmtn
+
+elif:
+====
+elif block is preceeded with if block when ever if block returning false condition then only control automatically moves to elif and executes the elif block statements.
+
+syntax:
+======
+if  condition:
+          stmt1
+          stmt2
+          smtn
+elif condition:
+        stmt1
+        stmt2
+        stmtn
+elif condition:
+        stmt1
+        stmt2
+        stmtn
+
+else:
+====
+else block is preceeded with if block and elif blocks statements when ever if and elif blocks returning false conditions then only control automatically moves to else block and executes the else block statements.
+
+syntax:
+======
+if  condition:
+          stmt1
+          stmt2
+          stmtn
+elif condition:
+        stmt1
+        stmt2
+        stmtn
+elif condition:
+        stmt1
+        stmt2
+        stmtn
+else:
+        stmt1
+        stmt2
+        stmtn
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+2)Looping Statements:
+-=-=-=-=-=-=-=-=-=-=-
+Looping statements are used to executes the set of statements continuously,until the condition becomes false.
+
+Python Supports two types of Looping Statements.
+
+a)while loop:
+-=-=-=-=-=-=-
+It is used to executes the set of statements as an iteration wise until the condition become false,if the condition remains false then automatically while loop can be terminated with out executing the iterations of that while loop.
+
+syntax:
+======
+while condition:
+            stmt1
+            stmt2
+            stmtn
+
+Example Program:
+-=-=-=-=-=-=-=-=-
+print("begin")
+a=int(input("Enter the value of a="))
+while a<=10:
+                print(a)
+                a+=1
+print("end")
+
+
+b)While Loop With break Statement:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+break:
+-=-=-=-
+break is a keyword in python,which is used in looping statements when ever control comes with in the break statement of while loop then it will not execute the loop then control will comes out from the loop.
+
+Example Program Using While Loop With break Statement:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+print("begin")
+a=int(input("Enter the value of a="))
+while a<=10:
+                a+=1
+                print(a)
+                if a==5:
+                                break
+                
+print("end")
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+c)While Loop With continue Statement:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+continue:
+========
+continue is a keyword in python,which is used in looping when ever control comes with in the continue statement of while loop then it will not execute that iteration then control will start executing from next iteration onwards.
+
+Example Program Using While Loop With continue Statement:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+print("begin")
+a=int(input("Enter the value of a="))
+while a<=10:
+                a+=1
+                if a==5:
+                         continue
+                print(a)
+                
+print("end")
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+d)for loop:
+-=-=-=-=-=-
+*)for loop is used to executes the set of statements with
+respect to every element in given iterable object.
+
+*)for loop works only on iterable objects.
+
+iterable objects:
+-=-=-=-=-=-=-=-=-
+Allowing and Accessing more than one element or
+more than one character at a time.
+str,list,tuple,set,dict
+
+non-iterable objects:
+-=-=-=-=-=-=-=-=-=-=-
+Allowing and Accessing only one element at a time.
+int,float,bool and complex
+
+syntax of for loop:
+-=-=-=-=-=-=-=-=-=-
+for variable in iterableobject:
+                       stmt1
+                       stmt2
+                       stmtn
+ex pgm:
+======
+a="hari"
+for b in a:
+                print(b)
+
+range function or range():
+=========================
+*)range is a predefined function which is used to allow only integers values.
+*)range is also an iterable object.
+
+syntax:
+=======
+a=range(startingdigit,endingdigit-1)
+print(a)
+=========================================================================================
+immutable objects:
+=================
+The data which does not allows u to modify or update the elements
+of those objects is known as a immutable objects.
+we cannot creates two different immutable objects for same data.
+immutable objects represented class objects are :
+    int,float,bool,complex,tuple,str
+
+mutable objects:
+=================
+The data which allows u to modify or update the elements
+of those objects is known as a mutable objects.
+we can creates two different mutable objects for same data.
+mutable objects represented class objects are :
+    list,set and dict
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- 
+                                  File Handling:
+                                 -=-=-=-=-=-=-=-
+*)file is a named location on the disk which store the data permanantly.
+
+*)python language provides various functions and methods to provide the communication between python program and files.
+
+*)python program is used to open the file by calling open() from builtins module and perform read or write operations with in the file and close the file.
+
+*)If we want to perform read or write operations with in the file,Then we can use modes of the file,modes of the file indicates what purpose the file going to be opened.
+
+modes of file:
+=============
+r====>read the data from file(default mode)
+w====>write the data into the file
+a====>append the data into the file
+wb===>write the data in binary format
+rb===>read the data in binary format
+
+to read the data from file to python program we can follow the below rules:
+=========================================================================
+1)open the file from the location we are saved the file in our computer.
+2)read the data from file.
+3)close the file
+
+Example Program 1:
+-=-=-=-=-=-=-=-=-
+#Reading the Data From the File into Python Console:
+
+#step 1: Open the file from the location
+
+x=open("C:\\FILE123.txt",'r')
+print(x)#prints the file memory address
+
+#step 2: read the data from file
+print(x.read())
+
+#step 3: close the file
+x.close()
+
+Example Program 2:
+-=-=-=-=-=-=-=-=-=
+#Write the Data From Python Program To File:
+
+#step 1: Open the file from the location
+
+x=open("C:\\FILE123.txt",'w')
+print(x)#prints the file memory address
+
+#step 2: using write method we can write the data
+x.write("ORACLE\nMYSQL\nPYTHON\nJAVA")
+
+#step 3: close the file
+x.close()
+
+Example Program 3:
+-=-=-=-=-=-=-=-=-
+#Write the Data From Python Program To File:
+
+#step 1: Open the file from the location
+
+x=open("C:\\FILE123.txt",'w')
+print(x)#prints the file memory address
+
+#step 2: using write method we can write the data
+x.write("ORACLE\nMYSQL\nPYTHON\nJAVA")
+
+#step 3: close the file
+x.close()
+
+Example Program 4:
+-=-=-=-=-=-=-=-=-=
+try:
+        x=open("CVV\DDD.txt",'w')
+        x.write({55.66,"surya"})
+        x.close()
+        print("success")
+except(FileNotFoundError):
+        print("file is not found in that location")
+=========================================================================================
+                                  Exception handling:
+                                  =-=-=-=-=-=-=-=-=-=
+Generally for every programming languages(python,c,cpp,java,.net and so on),we have 2 types of errors:
+
+    a)compile time/syntax errors.
+    b)run time errors.
+
+a)compiletime/syntax errors:
+===========================
+errors which are occured at the time of compilation of the
+program internally by python interpretor is known as a compiletime/syntax errors.
+
+if any compile time/syntax errors are occured then programmer or 
+developer will provides particular solutions to handle those compile time errors.
+
+if we are not handled compiletime then we cannot get filename.pyc(A.pyc==>bytecode)
+filename.class(A.class==>bytecode)
+reason to get compile time errors:
+=================================
+;
+()
+""
+''
+>
+<
+>=
+[]
+{}
+{
+:
+}
+
+b)runtime errors:
+=================
+errors which are occured at the time of executing the program internally by python interpretor is known as a run time errors.
+
+reason behind to get runtime errors:
+===================================
+hardware issues
+software problems
+invalid logic/invalid coding
+
+note:
+=====
+handling the runtime errors is also known as a Exception.
+
+Abnormal Termination:
+=====================
+if any run time errors are occured program will be stopped at the middle with out any executing the next statements,still if we are not handling the runtime errors
+then that program will remains abnormal termination means with out handling the errors program will be terminated at the middle.
+
+1 2 3 4 5
+
+To handle these run time errors we can use the concept of try and except block statements.
+
+try:
+====
+A block which is preceeded with try keyword is known as a try block.
+
+    syntax:
+    ======
+    try:
+       stmt1
+       stmt2
+       stmtn
+
+try block is used to receive the error code from the programmer/developer than it will also take that error code represented error class and assign to except block internally this is the working nature of try block.
+
+except:
+======
+A block which is preceeded with except keyword is known as a except block.
+
+    syntax:
+    ======
+    except(exceptionclass):
+       stmt1
+       stmt2
+       stmtn
+
+catch block is used to handle the runtime errors which was internally assigned the error code and its error class by the try block.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+while True:
+        try:
+                a=int(input("Enter the value of a="))
+                b=int(input("Enter the value of b="))
+                print(a/b)
+                print("success")
+        except(ZeroDivisionError):
+                print("second cannot be zero")
+
+        except(ValueError):
+                print("Enter only Integer Values")
+
+
+default except block:
+====================
+it is used to handle any type of run time errors which is occured at run time at the time of executing the program.
+
+syntax:
+======
+except:
+     stmt1
+     stmt2
+     stmtn
+
+Example Program:
+-=-=-=-=-=-=-=-=
+while True:
+        try:
+                a=int(input("Enter the value of a="))
+                b=int(input("Enter the value of b="))
+                print(a/b)
+                print("success")
+        except:
+                print("Error Occured")
+
+
+finally block:
+=============
+A block which is preceeded with finally keyword is known as a finally block.
+The purpose of using finally block wheather the occured or not occured,if any run time is occured then also statements which are defined inside of finally block will be executed.
+
+syntax:
+======
+try:==========>(valid)
+    stmt1
+    stmt2
+    stmt3
+except:
+    stmt1
+    stmt2
+    stmt3
+finally:
+    stmt1
+    stmt2
+    stmt3
+
+try:=========================>(valid)
+    stmt1
+    stmt2
+    stmt3
+finally:
+    stmt1
+    stmt2
+    stmt3
+
+except:=======================>(invalid)
+    stmt1
+    stmt2
+    stmt3
+finally:
+    stmt1
+    stmt2
+    stmt3
+
+Example Program 1:
+-=-=-=-=-=-=-=-=-=
+while True:
+        try:
+                a=int(input("Enter the value of a="))
+                b=int(input("Enter the value of b="))
+                print(a/b)
+                print("success")
+        except:
+                print("Error Occured")
+
+        finally:
+                print("hello finally block")
+
+
+Example Program 2:
+-=-=-=-=-=-=-=-=-=
+while True:
+        try:
+                a=int(input("Enter the value of a="))
+                b=int(input("Enter the value of b="))
+                print(a/b)
+                print("success")
+        finally:
+                print("hello finally block")
+
+
+UserDefined Errors/Custom Errors:
+=================================
+Any Error Classes which are defined by the users according 
+to the client requirements is known as a
+UserDefined Errors/Custom Errors.
+
+To Define this UserDefined Errors/Custom Errors we
+can follow 3 steps:
+
+1)Define an RuntimeError class
+2)Raise An RunTimeError
+3)Handle The RunTimeError
+
+*)Define an RuntimeError class:
+==============================
+to define an any runtime error class we can use the
+concept of class structure.
+
+Exception:
+-=-=-=-=-=
+Handling The Runtime Errors is also known as an Exception.
+
+syntax:
+======
+class Errorclassname(Exception):
+     pass 
+     stmt1
+     stmt2
+Note:
+====
+Exception is super class or parent class for all the RuntimeError classes.
+Handling the runtime errors is also known as an
+Exception.
+*)Raise an Error:
+=================
+to raise an any runtime error class we can use
+raise keyword.
+
+*)Handle an Error:
+==================
+To handle any runtime errors in python we can use
+try and except block statements.
+
+=========================================================================================
+                                       Modules:
+                                       -=-=-=-=
+*)Every python file itself called as a module and module is nothing but a predefined libraries or predefined programs.
+
+*)example:
+=========
+A.py,BC.py(user defined python files or modules),
+int.py,str.py,math.py,list.py,set.py(predefined python files or modules).
+
+*)A module can contains functions,methods,class,executable statements,global variables and so on.
+*)if we want to access the properties of one module to another module then we can use import statements.
+*)python supports 2 types of import statements.
+
+a)normal import statement
+b)from import statement
+
+a)normal import statement:
+=========================
+By using normal import statement we can access the properties of that module by using module name.
+
+At the time of importing the properties from one module to another module by using nor mal import statement we can also use aliase names.
+
+if we use aliase names to any modules then we can call that properties of that module by using aliase names only other wise we can get run time errors.
+
+Example Program 1:
+-=-=-=-=-=-=-=-=-=
+
+b)from import statement:
+=======================
+By using from import statement we can access the required properties of that module by using directly.
+
+At the time of importing the properties from one module to another module by using from import statement we can also use * to access all the properties of that module.
+
+to check only properties(functions,methods,variables and so on)
+with in a module we can use dir function/dir().
+ex:
+==
+print(dir(modulename))
+
+to check properties + description(functions,methods,variables and so on)
+with in a module we can use help function/help(modulename).
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                   packages:
+                                   ========
+package is nothing but a folder it contains a collections of 
+python compiled files.
+
+if we want to access the properties of any module inside of any packages by using foldername or packagename.modulename.
+
+if we want access the properties of any module inside of any sub packages by using packagename.subpackagename.modulename.
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+                                     Functions:
+                                     -=-=-=-=-=-
+Function is a self content block,which is used to represent
+business logic inside of the function body to perform an operations.
+
+syntax
+======
+def functionname(var1,var2===(parameters)):
+        stmt1
+        stmt2
+        stmtn
+        [return_value]
+
+variable which are defined with in the functions is known as a
+parameters,if we define parameters with in a function at the
+time of calling that function we can pass arguments otherwise
+we will get an error.
+
+*)parameters are defined with in the functions,which are used to define the input 
+with in the functions,those parameters input values are return to the functions
+using return keyword which is defined inside of the function body as last statement.
+
+note:
+====
+function can be executed directly when ever we can make a function call.
+
+Exple Program On Return Type 1:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+#function with return type
+def display(x,y):
+        return x+y
+
+z=display(8,6)
+print(z)#it will return value 14
+
+Example Program 2:
+-=-=-=-=-=-=-=-=-=-
+#function allowing n number of return types but executes only first defined return type value
+def display(x,y):
+        return x*y
+        return x-y
+        return x/y
+        return x+y
+
+z=display(5.36,3.36)
+print(z)
+        
+arbitary parameter function:
+===========================
+arbitary parameter will be defined with *variablename.
+
+if we define a arbitary parameter to any function,then we can pass n number of values and all will be returned in the form of tuple format.
+
+always arbitary parameter must be defined with in the
+function as a 2 parameter compared to normal or actual
+parameters.
+
+A Function will Allows only one arbitary parameter for each and every user defined function.
+
+Example Program on Arbitary Function:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+#Arbitary Parameter Function Program
+def display(*p):#  * using any variablename is a Arbitary Parameter function
+        print(p)
+
+display(3+4j,6+7j,8+9j,6+3j,1+5j)# return the data in the form of tuple class object format
+
+global variables
+================
+variables which are declared out side the functions and can be accessed into all the functions is known as a global variables.
+
+scope of global variables is out of the any user defined functions and life time of the global variable until the execution of the main program.
+
+
+local variables
+================
+variables which are declared with in the functions is known as a local variables.
+
+local variables of one function cannot be accessed into outside of the another functions.
+
+scope of local variables is with in the any user defined functions and life time of the local variable is until the execution of that main function.
+
+Example Program:
+-=-=-=-=-=-=-=-=
+#Local Variables Program:
+def m1():
+        a={True:"RAJA",3+4j:5000}#local variable
+        print(a)
+
+def m2():
+        b=74.36
+        print(b)
+        
+
+def m3():
+        c={7902,"Ford",58000.00}
+        print(c)
+
+def finalmethod():
+        m1()
+        m2()
+        m3()
+
+finalmethod()
+
+#Returning a function memory address:
+-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+Used to Find the Address of the function memory by calling function name from outside
+of the function using print function.
+
+Example Program:
+-=-=-=-=-=-=-=-=-
+def message():
+        print("Raja is a good boy")
+
+
+print(message)#it displays the address of the function object or memory
+
+message()#it displays the function memory or object data
+
+
+#Default and Non-Default Parameters:
+===================================
+Default Parameters
+==================
+Passing the arguments with in the function along with parameters
+is known as a  Default Parameters.
+
+Non-Default Parameters
+======================
+Passing the arguments to any function at the time of 
+calling that function from outside of that function
+is known as a  Non-Default Parameters.
+=========================================================================================

@@ -1,0 +1,6 @@
+virtual environment location:
+============================
+using this virtual environment location we can 
+develop all the projects individually in different location or all projects in same location then we
+can use virtualenv module.
+
